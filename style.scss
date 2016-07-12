@@ -63,6 +63,7 @@ h2{
 }
 
 .picture{
+	margin-left: 68px;
 	height: 400px;
 	background-image: url(picture.png);
 }
@@ -132,7 +133,7 @@ aside{
 
 
 footer{
-	height: 190px;
+	height: 220px;
 	background: $color-gray;
 }
 
@@ -187,8 +188,9 @@ footer{
 }
 
 .img_comp{
+	margin-right: 6px;
 	float: left;
 	width: 40px;
 	height: 45px;
-	background: red;
+	background: url(img.png);
 }
