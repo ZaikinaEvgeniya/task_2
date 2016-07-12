@@ -21,9 +21,8 @@ header {
   padding-left: 211px;
   padding-top: 63px;
   float: left; }
-
-p {
-  font-size: 14px; }
+  .brend p {
+    font-size: 14px; }
 
 .logo {
   width: 100px;
@@ -46,6 +45,7 @@ h2 {
   background: #777; }
 
 .picture {
+  margin-left: 68px;
   height: 400px;
   background-image: url(picture.png); }
 
@@ -93,7 +93,7 @@ aside {
   clear: both; }
 
 footer {
-  height: 190px;
+  height: 220px;
   background: #777; }
 
 .info {
@@ -135,9 +135,10 @@ footer {
     float: left; }
 
 .img_comp {
+  margin-right: 6px;
   float: left;
   width: 40px;
   height: 45px;
-  background: red; }
+  background: url(img.png); }
 
 /*# sourceMappingURL=style.css.map */
