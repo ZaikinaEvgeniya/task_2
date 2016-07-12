@@ -1,0 +1,194 @@
+$width: 100%;
+$color-gray: #777;
+$font-family: arial;
+
+
+body{
+width: $width;
+margin: 0px;
+}
+
+header{
+	height: 230px;
+	background: gainsboro;
+	padding-right: 63px;
+}
+
+.tel{
+	font-family: $font-family;
+	color: $color-gray;
+	font-size: 35px;
+	margin-top: 74px;
+	float: right;
+}
+
+.brend{
+	font-family: $font-family;
+	color: $color-gray;
+	//position: absolute;
+	width: 304px;
+	padding-left: 211px;
+	padding-top: 63px;
+	float:left;
+
+	p{
+		font-size: 14px;
+	}
+}
+
+.logo{
+	width: 100px;
+	height: 100px;
+	background: $color-gray;
+	//position: absolute;
+	//margin-left: 210px;
+	//margin-top: 63px;
+	float: left;
+	border-right: 11px solid gainsboro;
+}
+
+h2{
+	font-family: $font-family;
+	color: $color-gray;
+	margin-top: 0px;
+	padding-top: 6px;
+	font-size: 31px;
+	line-height: 26px;
+	margin-bottom: 0px;
+}
+
+.menu{
+	height: 80px;
+	background: $color-gray;
+}
+
+.picture{
+	height: 400px;
+	background-image: url(picture.png);
+}
+
+aside{
+	//display: table-cell;
+	width: 350px;
+	background: $color-gray;
+	float: left;
+
+	padding-left: 33px;
+	margin-left: 211px;
+	margin-top: 30px;
+	padding-top: 16px;
+
+	width: 316px;
+	height: 544px;
+
+.title_news{
+	font-family: $font-family;
+	font-size: 36px;
+	font-weight: bold;
+	//text-align: center;
+	color: white;
+}
+
+.news{
+	font-size: 12px;
+	line-height:22px;
+	margin-top: 25px;
+	width: 270px;
+	color: white;
+}
+}
+
+.box_text{
+	width: 573px;
+	//display: table-cell;
+	//background: red;
+	float: left;
+	//padding-top: 43px;
+	margin-top: 30px;
+	padding-top: 14px;
+	padding-left: 59px;
+	padding-bottom: 218px;
+	color: $color-gray;
+
+.title_text{
+	font-family: $font-family;
+	font-size: 39px;
+	//text-align: center;
+	//margin-left: 59px;
+}
+
+.text{
+	margin-top: 24px;
+	font-size: 12px;
+	font-family: $font-family;
+	letter-spacing: 0.7px;
+	line-height:22px;
+}
+}
+
+.clear{
+	clear: both;
+}
+
+
+footer{
+	height: 190px;
+	background: $color-gray;
+}
+
+.info{
+	color:white;
+	width: 309px;
+	float: left;
+
+	font-family: arial;
+	font-size: 13px;
+	letter-spacing: 1px;
+	line-height: 22px;
+
+	padding-top: 43px;
+	padding-left: 210px;
+
+	a{
+		text-decoration: none;
+		color:white;
+	}
+}
+
+.list{
+	color:white;
+	width: 406px;
+	float: left;
+	list-style-type: none;
+	text-decoration: underline;
+	padding-top: 29px;
+
+	font-family: arial;
+	font-size: 13px;
+	letter-spacing: 1px;
+	line-height: 25px;
+}
+
+.company{
+	padding-top: 44px;
+	color:white;
+	float: left;
+    width: 240px;
+
+    font-family: arial;
+	font-size: 13px;
+	letter-spacing: 1px;
+	line-height: 21px;
+
+    u{
+    	float: left;
+    }
+
+}
+
+.img_comp{
+	float: left;
+	width: 40px;
+	height: 45px;
+	background: red;
+}
