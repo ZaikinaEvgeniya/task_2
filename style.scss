@@ -19,6 +19,7 @@ header{
 	color: $color-gray;
 	font-size: 35px;
 	margin-top: 74px;
+	padding-right: 184px;
 	float: right;
 }
 
@@ -60,7 +61,39 @@ h2{
 .menu{
 	height: 80px;
 	background: $color-gray;
+
+	ul{
+	text-align: center;
+	list-style-type: none;
+	padding-top: 28px;
+	//padding-left: 210px;
+	margin-top:0px;
+	padding-left: 0px;
+	}
+	
+	#first{
+	border-left:none;
+	}
+
+	ul li{
+	border-left:3px solid white;
+	display: inline;
+	padding: 0 24px 0 21px;
+
 }
+	ul a{
+	font-family: $font-family;
+	text-decoration: none;
+	font-size: 28px;
+	line-height: 22px;
+	color: white;
+	}
+
+	ul a:hover{
+	text-decoration: underline;
+	}
+}
+
 
 .picture{
 	margin-left: 68px;
@@ -78,9 +111,17 @@ aside{
 	margin-left: 211px;
 	margin-top: 30px;
 	padding-top: 16px;
+	padding-bottom: 102px;
 
 	width: 316px;
-	height: 544px;
+	//height: 544px;
+
+	a{
+	font-size: 12px;
+	line-height: 22px;
+	color: white;
+	margin-left: 166px;
+	}
 
 .title_news{
 	font-family: $font-family;
@@ -88,6 +129,7 @@ aside{
 	font-weight: bold;
 	//text-align: center;
 	color: white;
+
 }
 
 .news{
