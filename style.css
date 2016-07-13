@@ -12,6 +12,7 @@ header {
   color: #777;
   font-size: 35px;
   margin-top: 74px;
+  padding-right: 184px;
   float: right; }
 
 .brend {
@@ -43,6 +44,26 @@ h2 {
 .menu {
   height: 80px;
   background: #777; }
+  .menu ul {
+    text-align: center;
+    list-style-type: none;
+    padding-top: 28px;
+    margin-top: 0px;
+    padding-left: 0px; }
+  .menu #first {
+    border-left: none; }
+  .menu ul li {
+    border-left: 3px solid white;
+    display: inline;
+    padding: 0 24px 0 21px; }
+  .menu ul a {
+    font-family: arial;
+    text-decoration: none;
+    font-size: 28px;
+    line-height: 22px;
+    color: white; }
+  .menu ul a:hover {
+    text-decoration: underline; }
 
 .picture {
   margin-left: 68px;
@@ -57,8 +78,13 @@ aside {
   margin-left: 211px;
   margin-top: 30px;
   padding-top: 16px;
-  width: 316px;
-  height: 544px; }
+  padding-bottom: 102px;
+  width: 316px; }
+  aside a {
+    font-size: 12px;
+    line-height: 22px;
+    color: white;
+    margin-left: 166px; }
   aside .title_news {
     font-family: arial;
     font-size: 36px;
