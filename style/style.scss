@@ -3,59 +3,50 @@ $color-gray: #777;
 $font-family: arial;
 
 
+@mixin text($color, $size){
+	font-family: $font-family;
+	color: $color;
+	font-size: $size;
+}
+
 body{
-width: $width;
-margin: 0px;
+	width: $width;
+	margin: 0px;
 }
 
 header{
 	height: 230px;
 	background: gainsboro;
-	padding-right: 63px;
+	padding: 0 63px;
 }
 
 .tel{
-	font-family: $font-family;
-	color: $color-gray;
-	font-size: 35px;
+	@include text($color-gray, 35px);
 	margin-top: 74px;
-	padding-right: 184px;
+	padding: 0 184px;
 	float: right;
 }
 
 .brend{
-	font-family: $font-family;
-	color: $color-gray;
-	//position: absolute;
+	@include text($color-gray, 14px);
 	width: 304px;
-	padding-left: 211px;
-	padding-top: 63px;
+	padding: 63px 0 0 211px;
 	float:left;
-
-	p{
-		font-size: 14px;
-	}
 }
 
 .logo{
 	width: 100px;
 	height: 100px;
 	background: $color-gray;
-	//position: absolute;
-	//margin-left: 210px;
-	//margin-top: 63px;
 	float: left;
 	border-right: 11px solid gainsboro;
 }
 
 h2{
-	font-family: $font-family;
-	color: $color-gray;
-	margin-top: 0px;
-	padding-top: 6px;
-	font-size: 31px;
+	@include text($color-gray, 31px);
+	margin: 0 0 0;
+	padding-top: 6px;	
 	line-height: 26px;
-	margin-bottom: 0px;
 }
 
 .menu{
@@ -65,10 +56,8 @@ h2{
 	ul{
 	text-align: center;
 	list-style-type: none;
-	padding-top: 28px;
-	//padding-left: 210px;
+	padding: 28px 0 0 0;
 	margin-top:0px;
-	padding-left: 0px;
 	}
 	
 	#first{
@@ -76,17 +65,15 @@ h2{
 	}
 
 	ul li{
-	border-left:3px solid white;
+	border-left:solid white;
 	display: inline;
 	padding: 0 24px 0 21px;
+	}
 
-}
 	ul a{
-	font-family: $font-family;
+	@include text(white, 28px);
 	text-decoration: none;
-	font-size: 28px;
-	line-height: 22px;
-	color: white;
+	line-height: 22px;	
 	}
 
 	ul a:hover{
@@ -96,79 +83,58 @@ h2{
 
 
 .picture{
-	margin-left: 68px;
+	//margin-left: 68px;
 	height: 400px;
-	background-image: url(../img/picture.png);
-}
+	overflow: hidden;
+	}
 
 aside{
-	//display: table-cell;
-	width: 350px;
+	//width: 229*100%/1024;
+	width: 317px;
 	background: $color-gray;
 	float: left;
-
-	padding-left: 33px;
-	margin-left: 211px;
-	margin-top: 30px;
-	padding-top: 16px;
-	padding-bottom: 102px;
-
-	width: 316px;
-	//height: 544px;
+	padding: 16px 0px 63px 33px;
+	margin: 30px 0 0 272px;
+	//width: 316px;
 
 	a{
-	font-size: 12px;
+	@include text(white, 13px);
 	line-height: 22px;
-	color: white;
 	margin-left: 166px;
 	}
 
-.title_news{
-	font-family: $font-family;
-	font-size: 36px;
+	.title_news{
+	@include text(white, 36px);
 	font-weight: bold;
-	//text-align: center;
-	color: white;
+	}
 
-}
-
-.news{
-	font-size: 12px;
+	.news{
+	@include text(white, 13px);
 	line-height:22px;
 	margin-top: 25px;
-	width: 270px;
-	color: white;
+	width: 240px;	
 	overflow: hidden;
-}
+	}
 }
 
 .box_text{
-	width: 573px;
-	//display: table-cell;
-	//background: red;
+	@include text($color-gray, 12px);
+	width: 410*100%/1024;
+	//width: 573px;
 	float: left;
-	//padding-top: 43px;
 	margin-top: 30px;
-	padding-top: 14px;
-	padding-left: 59px;
-	padding-bottom: 218px;
-	color: $color-gray;
+	padding: 14px 0 218px 59px;
 
-.title_text{
-	font-family: $font-family;
-	font-size: 39px;
-	//text-align: center;
-	//margin-left: 59px;
-}
+	.title_text{
+	@include text($color-gray, 39px);
+	}
 
-.text{
+	.text{
 	margin-top: 24px;
-	font-size: 12px;
-	font-family: $font-family;
 	letter-spacing: 0.7px;
 	line-height:22px;
 	overflow: hidden;
-}
+	}
 }
 
 .clear{
@@ -182,17 +148,12 @@ footer{
 }
 
 .info{
-	color:white;
+	@include text(white, 13px);
 	width: 309px;
 	float: left;
-
-	font-family: arial;
-	font-size: 13px;
 	letter-spacing: 1px;
 	line-height: 22px;
-
-	padding-top: 43px;
-	padding-left: 210px;
+	padding: 43px 0 0 271px;
 
 	a{
 		text-decoration: none;
@@ -201,27 +162,21 @@ footer{
 }
 
 .list{
-	color:white;
+	@include text(white, 13px);
 	width: 406px;
 	float: left;
 	list-style-type: none;
 	text-decoration: underline;
 	padding-top: 29px;
-
-	font-family: arial;
-	font-size: 13px;
 	letter-spacing: 1px;
 	line-height: 25px;
 }
 
 .company{
+	@include text(white, 13px);
 	padding-top: 44px;
-	color:white;
 	float: left;
     width: 240px;
-
-    font-family: arial;
-	font-size: 13px;
 	letter-spacing: 1px;
 	line-height: 21px;
 
@@ -240,64 +195,40 @@ footer{
 }
 
 
+@import 'style_form';
 
-#modal_form {
-	text-align: center;
-	width: 444px; 
-	height: 590px; /* Размеры должны быть фиксированы */
-	//border-radius: 5px;
-	border: 3px #000 solid;
-	background: #fff;
-	position: fixed; /* чтобы окно было в видимой зоне в любом месте */
-	top: 45%; /* отступаем сверху 45%, остальные 5% подвинет скрипт */
-	left: 50%; /* половина экрана слева */
-	margin-top: -220px;
-	margin-left: -236px; /* тут вся магия центровки css, отступаем влево и вверх минус половину ширины и высоты соответственно =) */
-	display: none; /* в обычном состоянии окна не должно быть */
-	opacity: 0; /* полностью прозрачно для анимирования */
-	z-index: 5; /* окно должно быть наиболее большем слое */
-	padding: 20px 10px;
-	padding-top: 14px;
-	color:$color-gray;
-	font-family:arial;
-
-	input, #big{
-		border-radius: 0px;
-		height: 39px;
-	}
-	#big{
-		height: 150px;
-	}
-	h3{
-		padding-bottom: 11px;
-	}
-}
-/* Кнопка закрыть для тех кто в танке) */
-#modal_form #modal_close {
-	width: 21px;
-	height: 21px;
-	position: absolute;
-	top: 10px;
-	right: 10px;
-	cursor: pointer;
-	display: block;
-}
-/* Подложка */
-#overlay {
-	z-index: 3; /* подложка должна быть выше слоев элементов сайта, но ниже слоя модального окна */
-	position: fixed; /* всегда перекрывает весь сайт */
-	background-color: #000; /* черная */
-	opacity: 0.8; /* но немного прозрачна */
-	width: 100%; 
-	height: 100%; /* размером во весь экран */
-	top: 0; 
-	left: 0; /* сверху и слева 0, обязательные свойства! */
-	cursor: pointer;
-	display: none; /* в обычном состоянии её нет) */
+@mixin circle($width, $left, $top, $color){
+	width: $width;
+	height: $width;
+	margin: $top 0 0  $left;
+	background: $color;
+	border-radius: 50%;
+	float: left;
+	opacity: 0.7; /* Значение прозрачности */
 }
 
-.buttom{
-	background: $color-gray;
-	color:white;
-	font-size:18px;
+
+.circle1 {
+	@include circle(325px,143px,106px, #c4c7e9);
+	
+}
+
+.circle2{
+	@include circle(176px,-76px,49px, #bfcfba);
+}
+
+.circle3{
+	@include circle(300px,-18px,48px, #f6d2b5);
+}
+
+.circle4{
+	@include circle(224px,60px,71px, #c4c7e9);
+}
+
+.circle5{
+	@include circle(300px,-40px,-67px, #f6d2b5);
+}
+
+.circle6{
+	@include circle(176px,82px,-34px,#bfcfba );
 }

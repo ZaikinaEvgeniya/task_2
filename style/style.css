@@ -6,25 +6,23 @@ body {
 header {
   height: 230px;
   background: gainsboro;
-  padding-right: 63px; }
+  padding: 0 63px; }
 
 .tel {
   font-family: arial;
   color: #777;
   font-size: 35px;
   margin-top: 74px;
-  padding-right: 184px;
+  padding: 0 184px;
   float: right; }
 
 .brend {
   font-family: arial;
   color: #777;
+  font-size: 14px;
   width: 304px;
-  padding-left: 211px;
-  padding-top: 63px;
+  padding: 63px 0 0 211px;
   float: left; }
-  .brend p {
-    font-size: 14px; }
 
 .logo {
   width: 100px;
@@ -36,11 +34,10 @@ header {
 h2 {
   font-family: arial;
   color: #777;
-  margin-top: 0px;
-  padding-top: 6px;
   font-size: 31px;
-  line-height: 26px;
-  margin-bottom: 0px; }
+  margin: 0 0 0;
+  padding-top: 6px;
+  line-height: 26px; }
 
 .menu {
   height: 80px;
@@ -48,72 +45,67 @@ h2 {
   .menu ul {
     text-align: center;
     list-style-type: none;
-    padding-top: 28px;
-    margin-top: 0px;
-    padding-left: 0px; }
+    padding: 28px 0 0 0;
+    margin-top: 0px; }
   .menu #first {
     border-left: none; }
   .menu ul li {
-    border-left: 3px solid white;
+    border-left: solid white;
     display: inline;
     padding: 0 24px 0 21px; }
   .menu ul a {
     font-family: arial;
-    text-decoration: none;
+    color: white;
     font-size: 28px;
-    line-height: 22px;
-    color: white; }
+    text-decoration: none;
+    line-height: 22px; }
   .menu ul a:hover {
     text-decoration: underline; }
 
 .picture {
-  margin-left: 68px;
   height: 400px;
-  background-image: url(../img/picture.png); }
+  overflow: hidden; }
 
 aside {
-  width: 350px;
+  width: 317px;
   background: #777;
   float: left;
-  padding-left: 33px;
-  margin-left: 211px;
-  margin-top: 30px;
-  padding-top: 16px;
-  padding-bottom: 102px;
-  width: 316px; }
+  padding: 16px 0px 63px 33px;
+  margin: 30px 0 0 272px; }
   aside a {
-    font-size: 12px;
-    line-height: 22px;
+    font-family: arial;
     color: white;
+    font-size: 13px;
+    line-height: 22px;
     margin-left: 166px; }
   aside .title_news {
     font-family: arial;
+    color: white;
     font-size: 36px;
-    font-weight: bold;
-    color: white; }
+    font-weight: bold; }
   aside .news {
-    font-size: 12px;
+    font-family: arial;
+    color: white;
+    font-size: 13px;
     line-height: 22px;
     margin-top: 25px;
-    width: 270px;
-    color: white;
+    width: 240px;
     overflow: hidden; }
 
 .box_text {
-  width: 573px;
+  font-family: arial;
+  color: #777;
+  font-size: 12px;
+  width: 40.03906%;
   float: left;
   margin-top: 30px;
-  padding-top: 14px;
-  padding-left: 59px;
-  padding-bottom: 218px;
-  color: #777; }
+  padding: 14px 0 218px 59px; }
   .box_text .title_text {
     font-family: arial;
+    color: #777;
     font-size: 39px; }
   .box_text .text {
     margin-top: 24px;
-    font-size: 12px;
-    font-family: arial;
     letter-spacing: 0.7px;
     line-height: 22px;
     overflow: hidden; }
@@ -126,38 +118,37 @@ footer {
   background: #777; }
 
 .info {
+  font-family: arial;
   color: white;
+  font-size: 13px;
   width: 309px;
   float: left;
-  font-family: arial;
-  font-size: 13px;
   letter-spacing: 1px;
   line-height: 22px;
-  padding-top: 43px;
-  padding-left: 210px; }
+  padding: 43px 0 0 271px; }
   .info a {
     text-decoration: none;
     color: white; }
 
 .list {
+  font-family: arial;
   color: white;
+  font-size: 13px;
   width: 406px;
   float: left;
   list-style-type: none;
   text-decoration: underline;
   padding-top: 29px;
-  font-family: arial;
-  font-size: 13px;
   letter-spacing: 1px;
   line-height: 25px; }
 
 .company {
-  padding-top: 44px;
+  font-family: arial;
   color: white;
+  font-size: 13px;
+  padding-top: 44px;
   float: left;
   width: 240px;
-  font-family: arial;
-  font-size: 13px;
   letter-spacing: 1px;
   line-height: 21px; }
   .company u {
@@ -204,7 +195,7 @@ footer {
   #modal_form h3 {
     padding-bottom: 11px; }
 
-/* Кнопка закрыть для тех кто в танке) */
+/* Кнопка закрыть */
 #modal_form #modal_close {
   width: 21px;
   height: 21px;
@@ -238,5 +229,65 @@ footer {
   background: #777;
   color: white;
   font-size: 18px; }
+
+.circle1 {
+  width: 325px;
+  height: 325px;
+  margin: 106px 0 0 143px;
+  background: #c4c7e9;
+  border-radius: 50%;
+  float: left;
+  opacity: 0.7;
+  /* Значение прозрачности */ }
+
+.circle2 {
+  width: 176px;
+  height: 176px;
+  margin: 49px 0 0 -76px;
+  background: #bfcfba;
+  border-radius: 50%;
+  float: left;
+  opacity: 0.7;
+  /* Значение прозрачности */ }
+
+.circle3 {
+  width: 300px;
+  height: 300px;
+  margin: 48px 0 0 -18px;
+  background: #f6d2b5;
+  border-radius: 50%;
+  float: left;
+  opacity: 0.7;
+  /* Значение прозрачности */ }
+
+.circle4 {
+  width: 224px;
+  height: 224px;
+  margin: 71px 0 0 60px;
+  background: #c4c7e9;
+  border-radius: 50%;
+  float: left;
+  opacity: 0.7;
+  /* Значение прозрачности */ }
+
+.circle5 {
+  width: 300px;
+  height: 300px;
+  margin: -67px 0 0 -40px;
+  background: #f6d2b5;
+  border-radius: 50%;
+  float: left;
+  opacity: 0.7;
+  /* Значение прозрачности */ }
+
+.circle6 {
+  width: 176px;
+  height: 176px;
+  margin: -34px 0 0 82px;
+  background: #bfcfba;
+  border-radius: 50%;
+  float: left;
+  opacity: 0.7;
+  /* Значение прозрачности */ }
 
 /*# sourceMappingURL=style.css.map */
