@@ -4,7 +4,10 @@
 		<title>task2</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="style.css">
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="scripts.js"></script>
 	</head>
+
 	<body>
 		<header>
 			<div class="brend">
@@ -26,9 +29,8 @@
 				<li><a href="#">Каталог</a></li>
 				<li><a href="#">Доставка и оплата</a></li>
 				<li><a href="#">Прайс-лист</a></li>
-				<li><a href="#">Контакты</a></li>
+				<li><a href="#" id="go">Контакты</a></li>
 			</ul>
-
 		</div>
 
 		<main>
@@ -91,5 +93,33 @@
 			</div>
 
 		</footer>
+
+
+<!-- Модальное окно -->
+<div id="modal_form">
+	<span id="modal_close">X</span>
+		<form action="" method="post">
+			<h3>ОБРАТНАЯ СВЯЗЬ</h3>
+			<p>Ваше имя<br />
+				<input type="text" name="your-name" value="" size="33" />
+			</p>
+			<p>Телефон<br />
+				<input type="text" name="tel" value="" size="33" />
+			</p>
+			<p>Email<br />
+				<input type="text" name="mail" value="" size="33" />
+			</p>
+			<p>Сообщение<br />
+				<input id="big" type="text" name="massage" value="" size="33" />
+			</p>
+			<p  style="text-align: center; padding-bottom: 5px;">
+				<input class="buttom" type="submit" value="ОТПРАВИТЬ" />
+			</p>
+		</form>
+</div>
+<div id="overlay"></div>
+		
+
+
 	</body>
 </hmtl>
