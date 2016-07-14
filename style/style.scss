@@ -15,7 +15,7 @@ body{
 }
 
 header{
-	height: 230px;
+	height: 228px;
 	background: gainsboro;
 	padding: 0 63px;
 }
@@ -23,7 +23,7 @@ header{
 .tel{
 	@include text($color-gray, 35px);
 	margin-top: 74px;
-	padding: 0 184px;
+	padding: 0 90px 0 0;
 	float: right;
 }
 
@@ -50,33 +50,36 @@ h2{
 }
 
 .menu{
-	height: 80px;
+	height: 79px;
 	background: $color-gray;
 
 	ul{
 	text-align: center;
 	list-style-type: none;
-	padding: 28px 0 0 0;
-	margin-top:0px;
-	}
-	
-	#first{
-	border-left:none;
+	padding: 24px 0 0 0;
+	margin:0 0 0 70px;
 	}
 
 	ul li{
-	border-left:solid white;
+	//border-left:solid #8cab9e thin;
 	display: inline;
-	padding: 0 24px 0 21px;
+	padding-left:10px;
 	}
+li:not(:last-of-type)::after{
+    content: '|';
+    color:white;
 
+}
+	
 	ul a{
 	@include text(white, 28px);
 	text-decoration: none;
 	line-height: 22px;	
+	padding-right: 22px;
 	}
 
 	ul a:hover{
+
 	text-decoration: underline;
 	}
 }
@@ -90,7 +93,7 @@ h2{
 
 aside{
 	//width: 229*100%/1024;
-	width: 317px;
+	width: 319px;
 	background: $color-gray;
 	float: left;
 	padding: 16px 0px 63px 33px;

@@ -4,7 +4,7 @@ body {
   margin: 0px; }
 
 header {
-  height: 230px;
+  height: 228px;
   background: gainsboro;
   padding: 0 63px; }
 
@@ -13,7 +13,7 @@ header {
   color: #777;
   font-size: 35px;
   margin-top: 74px;
-  padding: 0 184px;
+  padding: 0 90px 0 0;
   float: right; }
 
 .brend {
@@ -40,25 +40,26 @@ h2 {
   line-height: 26px; }
 
 .menu {
-  height: 80px;
+  height: 79px;
   background: #777; }
   .menu ul {
     text-align: center;
     list-style-type: none;
-    padding: 28px 0 0 0;
-    margin-top: 0px; }
-  .menu #first {
-    border-left: none; }
+    padding: 24px 0 0 0;
+    margin: 0 0 0 70px; }
   .menu ul li {
-    border-left: solid white;
     display: inline;
-    padding: 0 24px 0 21px; }
+    padding-left: 10px; }
+  .menu li:not(:last-of-type)::after {
+    content: '|';
+    color: white; }
   .menu ul a {
     font-family: arial;
     color: white;
     font-size: 28px;
     text-decoration: none;
-    line-height: 22px; }
+    line-height: 22px;
+    padding-right: 22px; }
   .menu ul a:hover {
     text-decoration: underline; }
 
@@ -67,7 +68,7 @@ h2 {
   overflow: hidden; }
 
 aside {
-  width: 317px;
+  width: 319px;
   background: #777;
   float: left;
   padding: 16px 0px 63px 33px;
