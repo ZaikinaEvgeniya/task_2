@@ -1,173 +1,8 @@
 @charset "UTF-8";
-body {
-  width: 100%;
-  margin: 0px; }
-
-header {
-  height: 228px;
-  background: gainsboro;
-  padding: 0 63px; }
-
-.tel {
-  font-family: arial;
-  color: #777;
-  font-size: 35px;
-  margin-top: 74px;
-  padding: 0 90px 0 0;
-  float: right; }
-
-.brend {
-  font-family: arial;
-  color: #777;
-  font-size: 14px;
-  width: 304px;
-  padding: 63px 0 0 211px;
-  float: left; }
-
-.logo {
-  width: 100px;
-  height: 100px;
-  background: #777;
-  float: left;
-  border-right: 11px solid gainsboro; }
-
-h2 {
-  font-family: arial;
-  color: #777;
-  font-size: 31px;
-  margin: 0 0 0;
-  padding-top: 6px;
-  line-height: 26px; }
-
-.menu {
-  height: 79px;
-  background: #777; }
-  .menu ul {
-    text-align: center;
-    list-style-type: none;
-    padding: 24px 0 0 0;
-    margin: 0 0 0 70px; }
-  .menu ul li {
-    display: inline;
-    padding-left: 10px; }
-  .menu li:not(:last-of-type)::after {
-    content: '|';
-    color: white; }
-  .menu ul a {
-    font-family: arial;
-    color: white;
-    font-size: 28px;
-    text-decoration: none;
-    line-height: 22px;
-    padding-right: 22px; }
-  .menu ul a:hover {
-    text-decoration: underline; }
-
-.picture {
-  height: 400px;
-  overflow: hidden; }
-
-aside {
-  width: 319px;
-  background: #777;
-  float: left;
-  padding: 16px 0px 63px 33px;
-  margin: 30px 0 0 272px; }
-  aside a {
-    font-family: arial;
-    color: white;
-    font-size: 13px;
-    line-height: 22px;
-    margin-left: 166px; }
-  aside .title_news {
-    font-family: arial;
-    color: white;
-    font-size: 36px;
-    font-weight: bold; }
-  aside .news {
-    font-family: arial;
-    color: white;
-    font-size: 13px;
-    line-height: 22px;
-    margin-top: 25px;
-    width: 240px;
-    overflow: hidden; }
-
-.box_text {
-  font-family: arial;
-  color: #777;
-  font-size: 12px;
-  width: 40.03906%;
-  float: left;
-  margin-top: 30px;
-  padding: 14px 0 218px 59px; }
-  .box_text .title_text {
-    font-family: arial;
-    color: #777;
-    font-size: 39px; }
-  .box_text .text {
-    margin-top: 24px;
-    letter-spacing: 0.7px;
-    line-height: 22px;
-    overflow: hidden; }
-
-.clear {
-  clear: both; }
-
-footer {
-  height: 220px;
-  background: #777; }
-
-.info {
-  font-family: arial;
-  color: white;
-  font-size: 13px;
-  width: 309px;
-  float: left;
-  letter-spacing: 1px;
-  line-height: 22px;
-  padding: 43px 0 0 271px; }
-  .info a {
-    text-decoration: none;
-    color: white; }
-
-.list {
-  font-family: arial;
-  color: white;
-  font-size: 13px;
-  width: 406px;
-  float: left;
-  list-style-type: none;
-  text-decoration: underline;
-  padding-top: 29px;
-  letter-spacing: 1px;
-  line-height: 25px; }
-
-.company {
-  font-family: arial;
-  color: white;
-  font-size: 13px;
-  padding-top: 44px;
-  float: left;
-  width: 240px;
-  letter-spacing: 1px;
-  line-height: 21px; }
-  .company u {
-    float: left; }
-
-.img_comp {
-  margin-right: 6px;
-  float: left;
-  width: 40px;
-  height: 45px;
-  background: url(../img/img.png); }
-
 #modal_form {
   text-align: center;
-  width: 444px;
-  height: 590px;
-  /* Размеры должны быть фиксированы */
-  border: 3px #000 solid;
+  width: 285px;
+  border: 3px solid #000;
   background: #fff;
   position: fixed;
   /* чтобы окно было в видимой зоне в любом месте */
@@ -176,25 +11,22 @@ footer {
   left: 50%;
   /* половина экрана слева */
   margin-top: -220px;
-  margin-left: -236px;
-  /* тут вся магия центровки css, отступаем влево и вверх минус половину ширины и высоты соответственно =) */
+  margin-left: -172px;
   display: none;
   /* в обычном состоянии окна не должно быть */
   opacity: 0;
   /* полностью прозрачно для анимирования */
   z-index: 5;
   /* окно должно быть наиболее большем слое */
-  padding: 20px 10px;
-  padding-top: 14px;
+  padding: 20px 10px 0 14px;
   color: #777;
   font-family: arial; }
-  #modal_form input, #modal_form #big {
-    border-radius: 0px;
-    height: 39px; }
+  #modal_form input {
+    margin: 0 0 10px; }
   #modal_form #big {
-    height: 150px; }
-  #modal_form h3 {
-    padding-bottom: 11px; }
+    height: 50px; }
+  #modal_form .button {
+    margin: 0 0 30px; }
 
 /* Кнопка закрыть */
 #modal_form #modal_close {
@@ -225,70 +57,5 @@ footer {
   cursor: pointer;
   display: none;
   /* в обычном состоянии её нет) */ }
-
-.buttom {
-  background: #777;
-  color: white;
-  font-size: 18px; }
-
-.circle1 {
-  width: 325px;
-  height: 325px;
-  margin: 106px 0 0 143px;
-  background: #c4c7e9;
-  border-radius: 50%;
-  float: left;
-  opacity: 0.7;
-  /* Значение прозрачности */ }
-
-.circle2 {
-  width: 176px;
-  height: 176px;
-  margin: 49px 0 0 -76px;
-  background: #bfcfba;
-  border-radius: 50%;
-  float: left;
-  opacity: 0.7;
-  /* Значение прозрачности */ }
-
-.circle3 {
-  width: 300px;
-  height: 300px;
-  margin: 48px 0 0 -18px;
-  background: #f6d2b5;
-  border-radius: 50%;
-  float: left;
-  opacity: 0.7;
-  /* Значение прозрачности */ }
-
-.circle4 {
-  width: 224px;
-  height: 224px;
-  margin: 71px 0 0 60px;
-  background: #c4c7e9;
-  border-radius: 50%;
-  float: left;
-  opacity: 0.7;
-  /* Значение прозрачности */ }
-
-.circle5 {
-  width: 300px;
-  height: 300px;
-  margin: -67px 0 0 -40px;
-  background: #f6d2b5;
-  border-radius: 50%;
-  float: left;
-  opacity: 0.7;
-  /* Значение прозрачности */ }
-
-.circle6 {
-  width: 176px;
-  height: 176px;
-  margin: -34px 0 0 82px;
-  background: #bfcfba;
-  border-radius: 50%;
-  float: left;
-  opacity: 0.7;
-  /* Значение прозрачности */ }
 
 /*# sourceMappingURL=style.css.map */
